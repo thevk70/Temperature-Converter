@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>⛅Temperature converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="Wrapper">
+      <div class="container">
+        <div class="flex-container">
+          <select id="unit1" class="form-control" onchange="setLable()">
+            <option value="celsius" selected="">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+            <option value="rankine">Rankine (°R)</option>
+          </select>
+          <span class="to-text">to</span>
+          <select id="unit2" class="form-control" onchange="setLable()">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit" selected="">Fahrenheit (°F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+            <option value="rankine">Rankine (°R)</option>
+          </select>
+        </div>
+        <div class="flex-container">
+          <label id="input-lable" for="input" class="lable-input">Celsius (°C)</label>
+          <input value="0" id="input-value" type="number" name="input" class="input" />
+        </div>
+        <div class="flex-container">
+          <button type="button" class="btn btn-green" onclick="convert()">= Convert</button>
+          <button type="button" class="btn btn-gray" onclick="swap()">⇌ Swap</button>
+          <button type="button" class="btn btn-red" onclick="reset()">❌ Reset</button>
+        </div>
+        <div class="flex-container">
+            <label id="output-lable" for="input" class="lable-input">Fahrenheit (°F)</label>
+            <textarea class="input" name="" id="output-value" cols="30" rows="1" readonly></textarea>
+          </div>
+          <div class="flex-container">
+            <label for="input" class="lable-input">Calculation</label>
+            <textarea class="input"  name="" id="Calculation" cols="30" rows="1" readonly></textarea>
+          </div>
+      </div>
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>

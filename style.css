@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a4a4a;
+}
+.container {
+  width: 50%;
+  background-color: #4a4a4a;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 3% 5%;
+  box-shadow: 10px 10px 500px lightblue;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.form-control {
+  min-width: 40%;
+  height: 38px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.to-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+}
+.lable-input,
+.input {
+  margin-top: 10px;
+}
+.lable-input{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.input {
+  min-width: 40%;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.btn{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.btn-green{
+  background-color: rgb(54, 159, 54);
+}
+.btn-gray{
+  background-color: gray;
+}
+.btn-red{
+  background-color: red;
+}
+@media only screen and (max-width: 900px) {
+ .container {
+    width: 100% !important;
+    border-radius: 20px;
+  }
+}
